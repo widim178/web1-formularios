@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+
+    <h1>Formularios</h1>
+    <form action="index.js" method="post">
+        <label for="nombreid">Nombre</label>
+        <!-- ingresar datos-->
+        <input type="text" name="nombre" id="nombreid">
+
+        <label for="apellidoid">Apellido</label>
+        <input type="text" name="apellido" id="apellidoid">
+
+        <label for="emailid">Email</label>
+        <input type="email" name="email" id="emailid">
+
+        <label for="passwordid">Contraseña</label>
+        <input type="password" name="password" id="passwordid">
+
+        <label for="edadid">Edad</label>
+        <input type="number" name="edad" id="edadid" min="0" max="120" required>
+        <!-- ingreso de mucho texto-->
+         <label for="mensaje">Ingrese un mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="40" rows="10"></textarea>
+        <!-- lsita de opciones-->
+         <label for="escuderia">Escuderias</label>
+        <select name="escuderia" id="escuderia">
+            <option value="">Elegir...</option>
+            <option value="ferrari">ferrari</option>
+            <option value="mclaren">mclaren</option>
+            <option value="hass">hass</option>
+        </select>
+
+        <!-- submit-->
+         <input type="submit" value="Enviar">
+
+        <!-- agrupamiento de datos  -->
+         <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="n1">Nombre</label>
+            <input type="text" name="nombre" id="n1" value="Sin Nombre" required>
+
+            <label for="">Apellido</label>
+            <input type="text" name="apellido" id="a1" required>
+
+         </fieldset>
+         <fieldset>
+            <legend>Gustos</legend>
+
+            <label for=""></label>
+         </fieldset>
+         <!-- radio-->
+          <label for="equipor">river</label>
+          <input type="radio" name="equipo" id="equipo" value="estudiantes" >
+
+          <!-- Deshabilitado-->
+           <input type="text" disabled placeholder="43">
+
+
+    </form>
+
+    <p>
+        ¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario? a) method b) <u>action</u> c) target d) url
+    </p>
+    <p>
+        ¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de entrada? a) data-type b) input-type c) <u>type</u> d) data
+    </p>
+    <p>
+        ¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo electrónico? a) text b) <u>email</u> c) mail d) input
+    </p>
+    <p>
+        ¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un formulario? a) description b) info c) placeholder d) <u>label</u>
+
+    </p>
+    <p>
+        ¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario? a) input type="submit" b) button type="submit" c) btn d) <u>submit</u>
+    </p>
+    <p>
+        ¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un formulario? a) <u>required</u> b) mandatory c) validate d) mandatoryfield
+
+    </p>
+    <p>
+        ¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario? a) list b) dropdown c) <u>select</u> d) input type="list"
+
+    </p>
+    <p>
+        ¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido? a) <u>text</u> b) email c) mail d) input
+
+    </p>
+    <p>
+        ¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario? a) <u>value</u> b) default c) preset d) initial
+    </p>
+    <p>
+        ¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos. Bibliografía 
+         Un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados HTTP verbs.<br> Cada uno de ellos implementan una semántica diferente, pero algunas características similares son compartidas por un grupo de ellos. ejemplos:<br>GET: el metodo get solicita un recurso epecifico. las peticiones que usan el metodo get solo deben redcuperar datos<br> POST: el metodo post se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor    </p>
+    <p>
+        ¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación. Bibliografía
+        Los códigos de estado de respuesta HTTP indican si se ha completado satisfactoriamente una solicitud HTTP específica. Las respuestas se agrupan en cinco clases
+        Respuestas informativas (100-199),
+        Respuestas satisfactorias (200-299),
+        Redirecciones (300-399),
+        Errores de los clientes (400-499),
+        y errores de los servidores (500-599).
+    
+    </p>
+
+    
+    
+</body>
+</html>

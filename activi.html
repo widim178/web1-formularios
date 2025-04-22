@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <h1><i>Autos Moviles</i></h1>
+    <p><i>Formulario solicitud de compra de automoviles</i></p>
+
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" value="sin nombre">
+
+        <label for="apelli">Apellido</label>
+        <input type="text" name="apelli" id="apelli" value="sin apellido">
+
+        <label for="correo">Correo Electronico</label>
+        <input type="email" name="correo" id="correo" required>
+
+        <label for="fn">Fecha Nacimiento</label>
+        <input type="date" name="fecha nacimiento" id="fn" required>
+
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" id="dni" maxlenght="8" required>
+
+        <label for="telefonoid">Telefono</label>
+        <input type="tel" name="telefono" id="telefonoid" required>
+
+        <label for="provinciasid">Provincias</label>
+        <select name="provincias" id="provinciasid">
+            <option value="">Elegir...</option>
+            <option value="buenos aires">Buenos Aires</option>
+            <option value="la pampa">La Pampa</option>
+            <option value="rio negro">Rio Negro</option>
+            <option value="neuquen">Neuquen</option>
+            <option value="chubut">Chubut</option>
+            <option value="santa cruz">Santa Cruz</option>
+            <option value="tierra del fuego">Tierra del Fuego</option>
+            <option value="misiones">Misiones</option>
+            <option value="jujuy">Jujuy</option>
+            <option value="salta">Salta</option>
+            <option value="corrrientes">Corrientes</option>
+            <option value="formosa">Formosa</option>
+            <option value="la rioja">La Rioja</option>
+            <option value="entre rios">Entre Rios</option>
+            <option value="mendoza">Mendoza</option>
+            <option value="san juan">San Juan</option>
+            <option value="san luis">San Luis</option>
+            <option value="chaco">Chaco</option>
+            <option value="cordoba">Cordoba</option>
+            <option value="catamarca">Catamarca</option>
+            <option value="santa fe">Santa Fe</option>
+            <option value="santiago del estero">Santiago del Estero</option>
+            <option value="tucuman">Tucuman</option>
+        </select>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Redes Social</legend>
+        <label for="userx">Usuario X</label>
+        <input type="text" name="userx" id="userx" value="no tiene usuario">
+
+        <label for="instagram">Usuario Instagram</label>
+        <input type="text" name="instagram" id="instagram" value="no tiene usuario">
+    </fieldset>
+    <fieldset>
+        <legend>Preguntas</legend>
+        <label for="categocar">¿que marca prefieres?</label>
+        <select name="categorias" id="categocar">
+            <option value="">Elegir...</option>
+            <option value="honda">Honda</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="Ford">Ford</option>
+            <option value="jeep">Jeep</option>
+            <option value="audi">Audi</option>
+            <option value="renault">Renault</option>
+            <option value="volkwagen">Volkswagen</option>
+            <option value="toyota">Toyota</option>
+            <option value="nissan">Nissan</option>
+            <option value="">otras</option>
+        </select>
+
+        <label for="asientosid">Capacidad de asientos del vehiculo</label>
+        <input type="number" name="asientos" id="asientosid" min="2" max="8">
+
+        <label for="licenciaid">¿tiene licencia de conducir?</label>
+        si<input type="radio" name="dis" id="licenciaid" value="si">
+        no<input type="radio" name="dis" id="lice" value="no">
+
+        <label for="preciid">¿cuanto considera seguro su auto preferencial?</label>
+        <input type="range" name="prec" id="precid" min="1" max="10"><br>
+
+        <label for="mensajeid">Comentenos su auto ideal</label><br>
+        <textarea name="mensaje" id="mensajeid" cols="40" rows="10"></textarea>
+
+        <input type="submit" value="enviar">
+
+    </fieldset>
+    
+</body>
+</html>
